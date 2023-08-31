@@ -157,6 +157,8 @@
     .top-navigation-bar .tnb-sub-menu {
         width: 100%;
         left: 0;
+        padding-top: 24px;
+        background: #f7f8f8;
     }
     .top-navigation-bar .tnb-sub-menu li a{
         padding: 7px 15px!important;
