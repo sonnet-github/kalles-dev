@@ -3,7 +3,7 @@
     <div class="inner-wrapper">
       {%- if section.settings.menu != blank -%}
         <ul class="top-level-menu">
-          {% for link in section.settings.menu %}
+          {% for link in section.settings.menu.links %}
             <li class="{% if link.links != blank %}has-sub-menu{% endif %}">
               {%- if link.links != blank -%}<div class="menu-group">{%- endif -%}
               <a href="{{link.url}}">{{ link.title }}</a>
