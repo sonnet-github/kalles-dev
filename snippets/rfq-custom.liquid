@@ -23,12 +23,26 @@
   } else {
     //mobile
     $('.top-navigation-bar .mob-main-toggle').click(function () {
-      $(this).find('.tnb-main-menu').stop().slideToggle();
+      $(this).next('.tnb-main-menu').stop().slideToggle();
     });
     $('.top-navigation-bar .menu-group').click(function () {
+      $(this).addClass('toggled')l
       $(this).find('.tnb-sub-menu').stop().slideToggle();
     });
   }
+
+  $(window).resize(function() {
+    if($(window).width() < 1100) {
+      $('.top-navigation-bar .mob-main-toggle').click(function () {
+        $(this).next('.tnb-main-menu').stop().slideToggle();
+      });
+      $('.top-navigation-bar .menu-group').click(function () {
+        console.log($(this).find('.tnb-sub-menu'));
+        $(this).toggleClass('toggled');
+        $(this).find('.tnb-sub-menu').stop().slideToggle();
+      });
+    }
+  })
 </script>
 <style>
   .t4s-cartPage__items .rfq-btn {

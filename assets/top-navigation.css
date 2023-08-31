@@ -63,7 +63,8 @@
     transition: all 0.2s ease-out;
 }
 .top-navigation-bar .tnb-main-menu > li.has-sub-menu .menu-group:hover svg,
-.top-navigation-bar .tnb-main-menu > li.has-sub-menu .menu-group:focus svg {
+.top-navigation-bar .tnb-main-menu > li.has-sub-menu .menu-group:focus svg,
+.top-navigation-bar .tnb-main-menu > li.has-sub-menu .menu-group.toggled svg {
     transform: rotate(180deg);
 }
 
@@ -115,6 +116,9 @@
     transition: all 0.2s ease-out;
 }
 @media (max-width: 1100px) {
+    .top-navigation-bar .container {
+        display: block;
+    }
     .top-navigation-bar .mob-main-toggle {
         display: block;
     }
