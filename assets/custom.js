@@ -9,6 +9,5 @@ jQuery_T4NT(document).ready(function($) {
 	     // $('[data-variant-toggle]').hide(0);
 	     // $('[data-variant-toggle="'+evt.currentVariant.id+'"]').show(0);
 	   });
-
-	   console.log('test');
+	   
 });
