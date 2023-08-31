@@ -140,7 +140,7 @@
         padding: 7px 42px 7px 15px!important;
     }
     .top-navigation-bar .tnb-main-menu > li .menu-group svg {
-        right: 15px;
+        right: 15px!important;
     }
     .top-navigation-bar .tnb-main-menu > li:last-child {
         border-bottom: none;
