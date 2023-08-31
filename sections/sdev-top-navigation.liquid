@@ -3,10 +3,7 @@
 <section class="top-navigation-bar">
   <div class="container">
     {%- if section.settings.menu != blank -%}
-      <ul
-        class="tnb-main-menu top-level-menu flickityt4s"
-        data-flickityt4s-js='{"isSimple": true,"freeScroll": true, "setPrevNextButtons":true, "arrowIcon":"1", "imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5,"minWidthLG": 1025,"cellAlignLG":"center","cellAlign":"center","wrapAround": false,"prevNextButtons": true,"percentPosition": 0,"pageDots": false, "pauseAutoPlayOnHover" : true }'
-      >
+      <ul class="tnb-main-menu top-level-menu">
         {% for link in section.settings.menu.links %}
           <li class="{% if link.links != blank %}has-sub-menu{% endif %}">
             {%- if link.links != blank -%}<div class="menu-group">{%- endif -%}
