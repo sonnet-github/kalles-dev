@@ -13,36 +13,21 @@
   });
 
   //top navigation
-  if ($(window).width() > 1100) {
-    $('.top-navigation-bar .menu-group').on('mouseenter', function () {
-      $(this).find('.tnb-sub-menu').stop().slideDown();
-    });
-    $('.top-navigation-bar .menu-group').on('mouseleave', function () {
-      $(this).find('.tnb-sub-menu').stop().slideUp();
-    });
-  } else {
-    //mobile
-    $('.top-navigation-bar .mob-main-toggle').click(function () {
-      $(this).next('.tnb-main-menu').stop().slideToggle();
-    });
-    $('.top-navigation-bar .menu-group').click(function () {
-      $(this).addClass('toggled')l
-      $(this).find('.tnb-sub-menu').stop().slideToggle();
-    });
-  }
+  $('.top-navigation-bar .menu-group').on('mouseenter', function () {
+    $(this).find('.tnb-sub-menu').stop().slideDown();
+  });
+  $('.top-navigation-bar .menu-group').on('mouseleave', function () {
+    $(this).find('.tnb-sub-menu').stop().slideUp();
+  });
 
-  $(window).resize(function() {
-    if($(window).width() < 1100) {
-      $('.top-navigation-bar .mob-main-toggle').click(function () {
-        $(this).next('.tnb-main-menu').stop().slideToggle();
-      });
-      $('.top-navigation-bar .menu-group').click(function () {
-        console.log($(this).find('.tnb-sub-menu'));
-        $(this).toggleClass('toggled');
-        $(this).find('.tnb-sub-menu').stop().slideToggle();
-      });
-    }
-  })
+  //mobile
+  $('.top-navigation-bar .mob-main-toggle').click(function () {
+    $(this).next('.tnb-main-menu').stop().slideToggle();
+  });
+  $('.top-navigation-bar .menu-group').click(function () {
+    $(this).addClass('toggled')l
+    $(this).find('.tnb-sub-menu').stop().slideToggle();
+  });
 </script>
 <style>
   .t4s-cartPage__items .rfq-btn {
