@@ -76,6 +76,7 @@
     top: 100%;
     left: 0;
     width: 180px;
+    background: #fff;
 }
 
 .top-navigation-bar .tnb-sub-menu > li a{

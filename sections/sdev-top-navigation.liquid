@@ -10,15 +10,13 @@
             <a href="{{link.url}}">{{ link.title }}</a>
             {%- if link.links != blank -%}
               {% render 'icon-chevron-down' %}
-              <div class="tnb-sub-menu">
-                <ul class="second-level">
-                  {%- for childLink in link.links -%}
-                    <li class="sub-menu-item">
-                      <a href="{{childLink.url}}">{{ childLink.title }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
+              <ul class="tnb-sub-menu second-level">
+                {%- for childLink in link.links -%}
+                  <li class="sub-menu-item">
+                    <a href="{{childLink.url}}">{{ childLink.title }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
             {%- endif -%}
             {%- if link.links != blank -%}</div>{%- endif -%}
           </li>
