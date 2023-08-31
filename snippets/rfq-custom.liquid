@@ -1,0 +1,19 @@
+<script>
+  $('.t4s-product').addClass('product-grid-item');
+  window.GRFQConfigs = window.GRFQConfigs || {}
+  window.GRFQConfigs.selector = window.GRFQConfigs.selector || {}
+  window.GRFQConfigs.selector.productCollectionItem += ', .t4s-product';
+  window.GRFQConfigs.selector.productCollectionHref = 'a[href*="products/"]';
+  window.GRFQConfigs.selector.price_selector += ', .t4s-product__price-review';
+
+  document.addEventListener("theme.filter.success", function(e) {
+  	window.GRFQConfigs = window.GRFQConfigs || {}
+    window.GRFQConfigs.products = []
+    GRFQApp.initialize();
+  });
+</script>
+<style>
+  .t4s-cartPage__items .rfq-btn {
+    display: none !important;
+  }
+</style>

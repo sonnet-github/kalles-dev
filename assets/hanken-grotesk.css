@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-Bold.ttf' | asset_url }}') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-BoldItalic.ttf' | asset_url }}') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-ExtraBold.ttf' | asset_url }}') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-ExtraBoldItalic.ttf' | asset_url }}') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-Italic.ttf' | asset_url }}') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-Medium.ttf' | asset_url }}') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-MediumItalic.ttf' | asset_url }}') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-Regular.ttf' | asset_url }}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-SemiBold.ttf' | asset_url }}') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('{{ 'HankenGrotesk-SemiBoldItalic.ttf' | asset_url }}') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Apply the font family to desired elements */
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
