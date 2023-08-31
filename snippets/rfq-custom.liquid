@@ -13,12 +13,22 @@
   });
 
   //top navigation
-  $('.top-navigation-bar .menu-group').on('mouseenter', function () {
-    $(this).find('.tnb-sub-menu').stop().slideDown();
-  });
-  $('.top-navigation-bar .menu-group').on('mouseleave', function () {
-    $(this).find('.tnb-sub-menu').stop().slideUp();
-  });
+  if ($(window).width() > 1100) {
+    $('.top-navigation-bar .menu-group').on('mouseenter', function () {
+      $(this).find('.tnb-sub-menu').stop().slideDown();
+    });
+    $('.top-navigation-bar .menu-group').on('mouseleave', function () {
+      $(this).find('.tnb-sub-menu').stop().slideUp();
+    });
+  } else {
+    //mobile
+    $('.top-navigation-bar .mob-main-toggle').click(function () {
+      $(this).find('.tnb-main-menu').stop().slideToggle();
+    });
+    $('.top-navigation-bar .menu-group').click(function () {
+      $(this).find('.tnb-sub-menu').stop().slideToggle();
+    });
+  }
 </script>
 <style>
   .t4s-cartPage__items .rfq-btn {
