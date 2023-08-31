@@ -159,4 +159,8 @@
         left: -15px;
         position: relative!important;
     }
+    .top-navigation-bar .tnb-sub-menu li a{
+        padding: 7px 30px!important;
+        background: #f7f8f8;
+    }
 }

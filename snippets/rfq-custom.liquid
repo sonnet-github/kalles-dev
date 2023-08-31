@@ -24,14 +24,15 @@
     if ($('.top-navigation-bar').length <= 0) return null;
 
     if ($(window).width() > 1100) {
-      $('.top-navigation-bar .menu-group').on('mouseenter', function () {
+      {% comment %} $('.top-navigation-bar .menu-group').on('mouseenter', function () {
         $(this).find('.tnb-sub-menu').stop().slideDown();
       });
       $('.top-navigation-bar .menu-group').on('mouseleave', function () {
         $(this).find('.tnb-sub-menu').stop().slideUp();
-      });
+      }); {% endcomment %}
     } else {
       $('.top-navigation-bar .menu-group').click(function () {
+        console.log('clicked');
         $(this).toggleClass('toggled');
         $(this).find('.tnb-sub-menu').stop().slideToggle();
       });
