@@ -2,6 +2,10 @@
 
 <section class="top-navigation-bar">
   <div class="container">
+    <div class="mob-main-toggle">
+      <h4>Collections</h4>
+      {% render 'icon-chevron-down' %}
+    </div>
     {%- if section.settings.menu != blank -%}
       <ul class="tnb-main-menu top-level-menu">
         {% for link in section.settings.menu.links %}
