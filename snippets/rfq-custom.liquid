@@ -16,6 +16,7 @@
 
   //mobile
   $('.top-navigation-bar .mob-main-toggle').click(function () {
+    $(this).addClass('toggled');
     $(this).next('.tnb-main-menu').stop().slideToggle();
   });
 
@@ -31,7 +32,7 @@
       });
     } else {
       $('.top-navigation-bar .menu-group').click(function () {
-        $(this).addClass('toggled');
+        $(this).toggleClass('toggled');
         $(this).find('.tnb-sub-menu').stop().slideToggle();
       });
     }
