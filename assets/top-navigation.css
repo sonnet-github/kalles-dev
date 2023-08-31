@@ -27,7 +27,8 @@
 .top-navigation-bar .tnb-main-menu li:last-child {
     padding-right: 0;
 }
-.top-navigation-bar .tnb-main-menu > li > a {
+.top-navigation-bar .tnb-main-menu > li > a,
+.top-navigation-bar .tnb-main-menu > li > .menu-group > a {
     text-decoration: none;
     color: rgba(34, 34, 34, 1);
     font-size: 14px;
