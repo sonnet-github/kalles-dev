@@ -10,4 +10,5 @@ jQuery_T4NT(document).ready(function($) {
 	     // $('[data-variant-toggle="'+evt.currentVariant.id+'"]').show(0);
 	   });
 
+	   console.log('test');
 });

@@ -1,30 +1,33 @@
+{{ 'top-navigation.css' | asset_url | stylesheet_tag }}
+
 <section class="top-navigation-bar">
   <div class="container">
-    <div class="inner-wrapper">
-      {%- if section.settings.menu != blank -%}
-        <ul class="top-level-menu">
-          {% for link in section.settings.menu.links %}
-            <li class="{% if link.links != blank %}has-sub-menu{% endif %}">
-              {%- if link.links != blank -%}<div class="menu-group">{%- endif -%}
-              <a href="{{link.url}}">{{ link.title }}</a>
-              {%- if link.links != blank -%}
-                {% render 'icon-chevron-down' %}
-                <div class="sub-menu">
-                  <ul class="second-level">
-                    {%- for childLink in link.links -%}
-                      <li class="sub-menu-item">
-                        <a href="{{childLink.url}}">{{ childLink.title }}</a>
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                </div>
-              {%- endif -%}
-              {%- if link.links != blank -%}</div>{%- endif -%}
-            </li>
-          {% endfor %}
-        </ul>
-      {%- endif -%}
-    </div>
+    {%- if section.settings.menu != blank -%}
+      <ul
+        class="tnb-main-menu top-level-menu flickityt4s"
+        data-flickityt4s-js='{"isSimple": true,"freeScroll": true, "setPrevNextButtons":{{se_stts.nav_btn}}, "arrowIcon":"1", "imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5,"minWidthLG": 1025,"cellAlignLG":"{{slide_cellAlign}}","cellAlign":"center","wrapAround": false,"prevNextButtons": {{se_stts.nav_btn}},"percentPosition": 0,"pageDots": false, "pauseAutoPlayOnHover" : true }'
+      >
+        {% for link in section.settings.menu.links %}
+          <li class="{% if link.links != blank %}has-sub-menu{% endif %}">
+            {%- if link.links != blank -%}<div class="menu-group">{%- endif -%}
+            <a href="{{link.url}}">{{ link.title }}</a>
+            {%- if link.links != blank -%}
+              {% render 'icon-chevron-down' %}
+              <div class="tnb-sub-menu">
+                <ul class="second-level">
+                  {%- for childLink in link.links -%}
+                    <li class="sub-menu-item">
+                      <a href="{{childLink.url}}">{{ childLink.title }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+            {%- if link.links != blank -%}</div>{%- endif -%}
+          </li>
+        {% endfor %}
+      </ul>
+    {%- endif -%}
   </div>
 </section>
 

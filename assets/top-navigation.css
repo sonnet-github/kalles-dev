@@ -1,0 +1,12 @@
+.top-navigation-bar {
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.top-navigation-bar .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+}
