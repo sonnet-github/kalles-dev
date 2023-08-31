@@ -155,12 +155,11 @@
         display: inline-block;
     } 
     .top-navigation-bar .tnb-sub-menu {
-        width: calc(100% + 30px);
-        left: -15px;
-        position: relative!important;
+        width: 100%;
+        left: 0;
     }
     .top-navigation-bar .tnb-sub-menu li a{
-        padding: 7px 30px!important;
+        padding: 7px 15px!important;
         background: #f7f8f8;
     }
 }
