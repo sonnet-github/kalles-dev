@@ -58,7 +58,7 @@
     height: 18px;
     position: absolute;
     top: calc(50% - 9px);
-    right: 15px;
+    right: 0;
     transform-origin: center;
     transition: all 0.2s ease-out;
 }
@@ -81,10 +81,10 @@
 
 .top-navigation-bar .tnb-sub-menu > li a{
     font-size: 14px;
-    line-height: 36px;
+    line-height: 20px;
     color: rgba(34, 34, 34, 1);
     font-family: 'Poppins', sans-serif;
-    padding: 0 15px;
+    padding: 5px 15px;
     display: block;
 }
 .top-navigation-bar .tnb-sub-menu > li a:hover,
